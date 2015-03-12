@@ -10,18 +10,19 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased !important;
   color: #6b7381;
+  background-color: #edebe2;
   background-size: 100px 100px;
   background-attachment: fixed;
   margin: 0; }
 
 header {
-  margin-top: 450px;
+  margin-top: 400px;
   text-transform: none;
   position: fixed;
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.5;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   width: 100%;
   padding: 0em;
   text-align: center; }
@@ -31,6 +32,25 @@ header {
     padding: 0 0 0.6em 0.1em;
     letter-spacing: 0px; 
     text-transform: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #6b7381;
+}
+
+a:visited {
+    color: #6b7381;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #6b7381;
+  cursor: pointer;
+}
+
+a:active {
+    color: #6b7381;
 }
 
 img {
