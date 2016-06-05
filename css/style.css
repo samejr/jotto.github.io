@@ -37,6 +37,15 @@ a:hover {
   margin: 0 10vw 60px; 10vw;
 }
 
+.header_desc a {
+  text-decoration: none;
+}
+
+.header_desc a:hover {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7)
+}
+
 h4 {
   font-weight: 600;
   font-size: 18px;
