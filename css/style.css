@@ -30,7 +30,7 @@ a {
     color: inherit;
 }
 a:hover {
-  color: #3B4475;
+  color: white;
 }
 
 .full-width {
@@ -53,11 +53,87 @@ h4 {
   color: #555;
 }
 
+
+
 li {
-  list-style-type: square;
+  list-style-type: none;
   color: #555;
-  margin-left: 20px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    float: left;
+    border-right:1px solid #555;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+@media (max-width: 414px) {
+  li:first-child {
+      display: none;
+  }
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+@media (max-width: 414px) {
+  li a {
+      padding: 14px 20px;
+      font-size: 12px;
+  }
+}
+
+li a:hover:not(.active) {
+    background-color: #423F91;
+}
+
+/*.active {
+    background-color: #423F91;
+}*/
+
+
+
+@media (max-width: 414px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.align-right {
+  float: right;
+}
+
+@media (max-width: 414px) {
+  .align-right {
+    float: left;
+  }
+}
+
+@media (max-width: 414px) {
+  li {
+    border-right: 1px solid #555 !important;
+  }
+}
+
+
+
 
 .txt-rt {
     text-align: right;
@@ -129,12 +205,14 @@ li {
 
 nav.vertical ul li {
     display: block;
+    list-style-type: none;
 }
 
 /* vertical menu */
 
 nav.horizontal ul li {
     display: inline-block;
+    list-style-type: none;
 }
 
 /* horizontal menu */
@@ -260,7 +338,7 @@ a.boxclose {
 }
 .iphone_img img {
     display: block;
-    margin-top: -18em;
+    margin-top: -20em;
     margin-left: 40px;
     text-align: left;
 }
