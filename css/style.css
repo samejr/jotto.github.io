@@ -55,12 +55,16 @@ h4 {
 
 
 
+
+
+/*top navigation*/
+
 li {
   list-style-type: none;
   color: #555;
 }
 
-ul {
+.nav-wrapper ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,22 +74,22 @@ ul {
     width: 100%;
 }
 
-li {
+.nav-items li {
     float: left;
     border-right:1px solid #555;
 }
 
-li:last-child {
+.nav-items li:last-child {
     border-right: none;
 }
 
 @media (max-width: 414px) {
-  li:first-child {
+  .nav-items li:first-child {
       display: none;
   }
 }
 
-li a {
+.nav-items li a {
     display: block;
     color: white;
     text-align: center;
@@ -94,44 +98,42 @@ li a {
 }
 
 @media (max-width: 414px) {
-  li a {
+  .nav-items li a {
       padding: 14px 20px;
       font-size: 12px;
   }
 }
 
-li a:hover:not(.active) {
+.nav-items li a:hover:not(.active) {
     background-color: #423F91;
 }
 
-/*.active {
-    background-color: #423F91;
-}*/
-
-
-
 @media (max-width: 414px) {
-  .hide-on-mobile {
+  .nav-items .hide-on-mobile {
     display: none;
   }
 }
 
-.align-right {
+.nav-items .align-right {
   float: right;
 }
 
 @media (max-width: 414px) {
-  .align-right {
+  .nav-items .align-right {
     float: left;
   }
 }
 
 @media (max-width: 414px) {
-  li {
+  .nav-items .nav-items li {
     border-right: 1px solid #555 !important;
   }
 }
 
+
+
+
+/*-------*/
 
 
 
@@ -561,6 +563,17 @@ a.boxclose {
     padding: 10em 0;
     text-align: center;
 }
+
+.social-icons ul {
+  list-style-type: none;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*overflow: hidden;*/
+  background-color: #333;
+  position: relative !important;
+  /*width: 100%;*/
+}
+
 .social_icons li {
     display: inline-block;
     margin: 0 15px;
