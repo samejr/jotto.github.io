@@ -26,7 +26,7 @@ table {
     border-spacing: 0;
 }
 a {
-    text-decoration: underline;;
+    text-decoration: underline;
     color: inherit;
 }
 a:hover {
@@ -34,7 +34,7 @@ a:hover {
 }
 
 .full-width {
-  margin: 0 10vw 60px; 10vw;
+  margin: 0 10vw 60px;
 }
 
 .header_desc a {
