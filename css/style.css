@@ -132,7 +132,35 @@ li {
 }
 
 
+/*qiktionary embedded demo*/
 
+.qik-demo {
+    float: right;
+    padding-top: 0em;
+    margin-right: 8em;
+    margin-bottom: 40px;
+}
+
+.demo-desc {
+    float: left;
+    width: 30%;
+    margin-left: 10em;
+}
+
+@media only screen and (max-width: 950px) {
+  .demo-desc {
+      float: none;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 30px;
+  }
+  .qik-demo {
+      float: none;
+      padding-top: 0em;
+      margin: 0 auto;
+  }
+}
 
 /*-------*/
 
@@ -367,7 +395,7 @@ a.boxclose {
 /*** Content ****/
 .content_top {
     background: #f4f4f4;
-    padding: 8em 0 0 0;
+    padding: 8em 0 3em 0;
 }
 .content_top h2 {
     font-size: 2.5em;
@@ -745,7 +773,11 @@ a.boxclose {
         width: 90%;
     }
     .ipad_desc {
-        width: 46%;
+        width: 36%;
+        margin-left: 9em;
+    }
+    .demo_desc {
+        width: 36%;
         margin-left: 9em;
     }
     .ipad_img {
